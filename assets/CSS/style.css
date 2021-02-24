@@ -6,6 +6,79 @@ Color Hexcodes:
 #8ad6cc (dark teal)
 #b2eee6 (light teal)
 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color:#f99192;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url(../images/hero-blur.jpg);
+    background-size: cover;
+    background-position: 70%;
+    background-attachment: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+}
+header h1{
+    font-style: bold;
+    background-color: rgba(249, 145, 146, 0.75);
+    border: 2px solid #f97171;
+    padding: 10px;
+    border-radius: 15px;
+}
+header a {
+    text-decoration: none;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(249, 145, 146, 0.75);
+    border: 2px solid #f97171;
+    border-radius: 10px;
+}
+header nav ul li a:hover {
+    background-color: rgba(178,238, 230, 0.75);
+    border: 2px solid #8ad6cc;
+    color: #385a7c;
+}
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: 70%;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero p{
+    background-color: rgba(178,238, 230, 0.8);
+    font-size: 40px;
+    width: 50%;
+    text-align: center;
+    color: #385a7c;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #8ad6cc;
+}
+section{
+    padding: 60px;
 }
