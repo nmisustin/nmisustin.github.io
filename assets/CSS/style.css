@@ -14,8 +14,8 @@ Color Hexcodes:
 }
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color:#f99192;
-
+    background-image: url(../images/body-background.jpg);
+    background-size: cover;
 }
 header {
     display: flex;
@@ -83,9 +83,11 @@ section{
     padding: 60px;
 }
 .bio{
-   display: block; 
+   display: flex; 
+   justify-content: center;
+   flex-wrap: wrap;
 }
-.bio h2 {
+.primary-title {
     font-size: 35px;
     background-color: #b2eee6;
     border: 4px solid #8ad6cc;
@@ -94,18 +96,35 @@ section{
     text-align: center;
     color: #385a7c;
     margin: 10px;
+    flex: 100%;
 }
-.bio-info img {
-    width: 100%;
+.bio img {
+    width: 50%;
+    flex: 1;
+    padding: 25px;
+    background-color: #b2eee6;
+    border: 3px solid #8ad6cc;
+    border-radius: 10px;
+    margin: 20px;
 }
-.bio-info {
+/*.bio-info {
     width: 100%;
     background-color: #b2eee6;
     border: #8ad6cc 4px solid;
     padding: 30px 30px;
     border-radius: 20px;
     margin-top: 25px;
+}*/
+.bio-text {
+    background-color: #b2eee6;
+    border: 3px solid #8ad6cc;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px;
+    width: 50%;
+    flex:1
 }
-.bio-text p{
+.bio-text p {
     color: #385a7c;
+    font-size: 20px;
 }
