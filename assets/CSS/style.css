@@ -59,6 +59,14 @@ header nav ul li a:hover {
     border: 2px solid #8ad6cc;
     color: #385a7c;
 }
+footer {
+    background-color: #b2eee6;
+    text-align: center;
+}
+footer p{
+    color: #385a7c;
+    font-size: 20px;
+}
 .hero {
     background-image: url(../images/hero.jpg);
     background-size: cover;
@@ -89,7 +97,7 @@ section{
 }
 .primary-title {
     font-size: 35px;
-    background-color: #b2eee6;
+    background-color: rgba(178,238, 230, 0.8);
     border: 4px solid #8ad6cc;
     border-radius: 10px;
     padding: 10px;
@@ -99,10 +107,10 @@ section{
     flex: 100%;
 }
 .bio img {
-    width: 50%;
+    width: 30%;
     flex: 1;
     padding: 25px;
-    background-color: #b2eee6;
+    background-color: rgba(178,238, 230, 0.8);
     border: 3px solid #8ad6cc;
     border-radius: 10px;
     margin: 20px;
@@ -116,15 +124,73 @@ section{
     margin-top: 25px;
 }*/
 .bio-text {
-    background-color: #b2eee6;
+    background-color: rgba(178,238, 230, 0.8);
     border: 3px solid #8ad6cc;
     border-radius: 10px;
     padding: 25px;
     margin: 20px;
     width: 50%;
-    flex:1
+    flex:2;
 }
 .bio-text p {
     color: #385a7c;
     font-size: 20px;
+}
+.applications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.best-work {
+    background-color: rgba(178,238, 230, 0.8);
+    border: 2px solid #8ad6cc;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+.best-work h3 {
+    color: #385a7c;
+}
+.best-work p a{
+    background-color: #f99192;
+    padding: 5px;
+    border: 2px solid #f97171;
+    border-radius: 7px;
+    line-height: 2.5;
+    text-decoration: none;
+}
+.best-work img{
+    width: 100%;
+}
+.other-projects {
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+
+}
+.project {
+    flex: 1;
+    width: 50%;
+    background-color: rgba(178,238, 230, 0.8);
+    border: 2px solid #8ad6cc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.project p a {
+    background-color: #f99192;
+    padding: 5px;
+    border: 2px solid #f97171;
+    border-radius: 7px;
+    line-height: 2.5;
+    text-decoration: none;
+}
+.project h3 {
+    color: #385a7c;
+}
+.project img {
+    width: 100%;
 }
