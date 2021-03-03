@@ -115,14 +115,6 @@ section{
     border-radius: 10px;
     margin: 20px;
 }
-/*.bio-info {
-    width: 100%;
-    background-color: #b2eee6;
-    border: #8ad6cc 4px solid;
-    padding: 30px 30px;
-    border-radius: 20px;
-    margin-top: 25px;
-}*/
 .bio-text {
     background-color: rgba(178,238, 230, 0.8);
     border: 3px solid #8ad6cc;
@@ -134,7 +126,7 @@ section{
 }
 .bio-text p {
     color: #385a7c;
-    font-size: 20px;
+    font-size: 30px;
 }
 .applications {
     display: flex;
@@ -213,4 +205,75 @@ section{
     background-color: rgba(178,238, 230, 0.8);
     border-color: #8ad6cc;
     color: #385a7c;
+}
+@media screen and (max-width: 980px) {
+   header{
+       position: relative;
+       justify-content: center;
+       padding: 5px;
+   }
+   header h1{
+       width: 60%;
+       text-align: center;
+   }
+   header nav ul {
+       width: 100%;
+       margin: 25px;
+       justify-content: center;
+   }
+   header nav ul li {
+       font-size: 25px;
+   }
+   .bio img {
+       width: 100%;
+   }
+   .bio-text p {
+       width: 100%;
+       font-size: 30px;
+   }
+   .project {
+       flex: 0 80%;
+   }
+   .other-projects {
+       justify-content: center;
+   }
+   .contact-info p a {
+       font-size: 20px;
+   }
+
+}
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        font-size: 20px;
+    }
+    section {
+        padding: 0 20px 20px 20px;
+    }
+    .hero p {
+        font-size: 30px;
+    }
+    .bio {
+        padding-top: 20px;
+    }
+    .bio img {
+        width: 75%;
+    }
+    .bio-text p {
+        font-size: 25px;
+    }
+    .contact-info p a {
+        font-size: 15px ;
+    }
+}
+@media screen and (max-width: 575px) {
+    header ul li {
+        font-size: 10px;
+    }
+    .hero p {
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .bio-text p{
+        font-size: 20px;
+    }
 }
